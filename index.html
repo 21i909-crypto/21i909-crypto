@@ -31,12 +31,19 @@
                 margin-left: 25px;
                 background-color: rgb(189, 189, 189);
             }
+            .imgs {
+                margin-left: 50spx;
+            }
+            .menu.b {
+                white-space: nowrap;
+            }
             p {
                 font-size: 20spx;
                 text-align: left;
                 margin-left: 125px;
                 line-height: 0px;
                 color: black;
+                white-space: nowrap";
             }
             #footer {
                 font-size: 25spx;
@@ -54,22 +61,34 @@
     </navigation>
     <body>
         <img src="images/Banner_Steak with Mushroom Risotto.jpg" width="100%"/>
-            <h2 >Menu A</h2>
+            <h2 >A</h2>
                 <p>1. Micro-wave le gra-pes .^_^</p>
                 <br><p>2. Steak with Mushroom Risotto</p>
                 <br><p>3. Spaghetti Carbonara</p>
                 <br><p>4. Beef and Mushroom Pie</p>
                 <br><p>5. Financier</p>
-            <h2>Menu B</h2>   
+            <h2 class="menu b">B</h2>  
                 <p>1. Scrambled Eggs with Smoked Salmon</p>
                 <br><p>2. Chicken Alfredo Pasta</p>
                 <br><p>3. Garlic Butter Toast</p>
                 <br><p>4. Classic Cheesecake</p>
-            <img src="file:///Users/evahuang/Desktop/School%20Stuff/Design/git/images/Flour.jpg" width="23.5%"/>
-            <img src="file:///Users/evahuang/Desktop/School%20Stuff/Design/git/images/Sugar.jpg" width="25%"/>
+            <img src="https://s3-ap-northeast-1.amazonaws.com/file.retire.tw/retire/article/article_2018_01_18_14_58_46_36.jpg" width="22.5%"; img class="imgs"/>
+            <img src="https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2023/08/sugar-shutterstock_615908132s.jpg?size=*:900" width="26.5%"/>
+            <img src="https://s3-ap-northeast-1.amazonaws.com/file.retire.tw/retire/article/article_2018_01_18_14_58_46_36.jpg" width="22.5%"/>
+            <img src="https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2023/08/sugar-shutterstock_615908132s.jpg?size=*:900" width="26.5%"/>
             <footer>
                 <h2 id="footer"> Footer </h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.908524127634!2d120.63433957557623!3d24.10471217508149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693c16a2087bc5%3A0x5dad29846ff91db1!2z5piO6YGT5Lit5a245ZyL6Zqb6YOoIE1ESUQgLSBJQuWtuOagoQ!5e0!3m2!1sen!2stw!4v1764560428306!5m2!1sen!2stw" width="100%" height="450" style="border:0;" allowfullscreen="2" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </footer>
     </body>
 </html>
+
+display: grid
+grid-template-column: repeat(12, 1fr);
+grid-template-rows: auto;
+gap: 10px;
+grid-auto-flow: row;
+grid-column: span 6;
+grid-row: span 2;
+justify-items: center;
+align-items: center;
