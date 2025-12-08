@@ -2,7 +2,7 @@
     <head>
         <title>CDish</title>
     </head>
-            <style>
+    <style>
             h1 {
                 font-size: 25spx;
                 text-align: right;
@@ -34,8 +34,36 @@
             .imgs {
                 margin-left: 50spx;
             }
-            .menu.b {
-                white-space: nowrap;
+            section{
+                flex-wrap: nowrap;
+            }
+            .container0 {
+                display: flex;
+                flex-wrap: row;
+                justify-content: left;
+                margin-left: -75px;
+                margin-top: auto
+            }
+            .container1 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-left: -500px;
+                margin-top: -315px
+            }
+            .container2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-left: 220px;
+                margin-top: -272px
+            }
+            .container3 {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                margin-left: 800px;
+                margin-top: -270px
             }
             p {
                 font-size: 20spx;
@@ -43,14 +71,13 @@
                 margin-left: 125px;
                 line-height: 0px;
                 color: black;
-                white-space: nowrap";
             }
             #footer {
                 font-size: 25spx;
                 text-align: center;
                 color: black;
             }
-            </style>
+    </style>
     <navigation>
         <img src="images/Logo.png" width="4.5%"; img id="img"/>
         <h1>
@@ -60,27 +87,71 @@
         </h1>
     </navigation>
     <body>
-        <img src="images/Banner_Steak with Mushroom Risotto.jpg" width="100%"/>
-            <h2 >A</h2>
+        <div id="banner">
+            <img src="images/Banner_Steak with Mushroom Risotto.jpg" width="100%"/>
+        </div>
+        <content>
+            <ul class="container0">
+            <section class="menu a">
+                <h2>A</h2>
                 <p>1. Micro-wave le gra-pes .^_^</p>
                 <br><p>2. Steak with Mushroom Risotto</p>
                 <br><p>3. Spaghetti Carbonara</p>
                 <br><p>4. Beef and Mushroom Pie</p>
                 <br><p>5. Financier</p>
-            <h2 class="menu b">B</h2>  
+            </section>
+            </ul>
+            <ul class="container1">
+            <section class="menu b">
+                <h2>B</h2>  
                 <p>1. Scrambled Eggs with Smoked Salmon</p>
                 <br><p>2. Chicken Alfredo Pasta</p>
                 <br><p>3. Garlic Butter Toast</p>
                 <br><p>4. Classic Cheesecake</p>
-            <img src="https://s3-ap-northeast-1.amazonaws.com/file.retire.tw/retire/article/article_2018_01_18_14_58_46_36.jpg" width="22.5%"; img class="imgs"/>
-            <img src="https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2023/08/sugar-shutterstock_615908132s.jpg?size=*:900" width="26.5%"/>
-            <img src="https://s3-ap-northeast-1.amazonaws.com/file.retire.tw/retire/article/article_2018_01_18_14_58_46_36.jpg" width="22.5%"/>
-            <img src="https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2023/08/sugar-shutterstock_615908132s.jpg?size=*:900" width="26.5%"/>
-            <footer>
+            </section>
+            </ul>
+            <ul class="container2">
+            <section class="menu c">
+                <h2>C</h2>  
+                <p>1. French Omelette</p>
+                <br><p>2. Lemon Herb Roasted Chicken</p>
+                <br><p>3. Caprese Salad</p>
+                <br><p>4. Tiramisu</p>
+            </section>
+            </ul>
+            <ul class="container3">
+            <section class="menu d">
+                <h2>D</h2> 
+                <p>1. Avocado Toast</p>
+                <br><p>2. Beef Stir-Fry</p>
+                <br><p>3. Margherita Pizza</p>
+                <br><p>4. Chocolate Mousse</p>
+            </section>
+            </ul>
+        </content>
+        <div id="images">
+            <table>
+                <thead>
+                <tr>
+                    <th>Flour</th>
+                    <th>Sugar</th>
+                    <th>Flour</th>
+                    <th>Sugar</th>
+                </tr>
+                </thead>
+                    <img src="https://s3-ap-northeast-1.amazonaws.com/file.retire.tw/retire/article/article_2018_01_18_14_58_46_36.jpg" width="22.5%"; img class="imgs"/>
+                    <img src="https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2023/08/sugar-shutterstock_615908132s.jpg?size=*:900" width="26.5%"/>
+                    <img src="https://s3-ap-northeast-1.amazonaws.com/file.retire.tw/retire/article/article_2018_01_18_14_58_46_36.jpg" width="22.5%"/>
+                    <img src="https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2023/08/sugar-shutterstock_615908132s.jpg?size=*:900" width="26.5%"/>
+        </div>
+    </body>
+    <footer>
+        <ul class="container-footer">
                 <h2 id="footer"> Footer </h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.908524127634!2d120.63433957557623!3d24.10471217508149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693c16a2087bc5%3A0x5dad29846ff91db1!2z5piO6YGT5Lit5a245ZyL6Zqb6YOoIE1ESUQgLSBJQuWtuOagoQ!5e0!3m2!1sen!2stw!4v1764560428306!5m2!1sen!2stw" width="100%" height="450" style="border:0;" allowfullscreen="2" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </footer>
-    </body>
+        </ul>
+    </footer>
 </html>
 
 display: grid
