@@ -3,9 +3,17 @@
         <title>CDish</title>
     </head>
     <style>
+            header {
+                background-color: rgb(105, 131, 148);
+                box-shadow:rgb(105, 131, 148) 20px 4px 12px 35px;
+                padding: 10px;
+                height: 10%;
+                width: 100%;
+            }
             h1 {
                 font-size: 25spx;
                 text-align: right;
+                margin-right: 25px;
                 color: black;
             }
             h2 {
@@ -77,20 +85,34 @@
                 text-align: center;
                 color: black;
             }
+            table, thead, tr, th { 
+                border:2px solid #000; 
+                border-collapse:collapse;
+                margin-top: 80px;
+                font-size: 20px;
+            }
+            table, thead, tr, td { 
+                border:1px solid #000; 
+                margin-top: 80px;
+                align-items: center;
+                width: 100%;
+                table-layout: fixed;
+                padding: 5px;
+            }
     </style>
-    <navigation>
+    <header>
         <img src="images/Logo.png" width="4.5%"; img id="img"/>
         <h1>
             <a href="file:///Users/evahuang/Desktop/School%20Stuff/Design/git/index.html">Home</a>
             <a href="https://www.delish.com/cooking/recipe-ideas/a64378020/how-to-make-scrambled-eggs-recipe/">Egg Recipes</a>
             <a href="https://www.delish.com/search/?q=bread">Bread Recipes</a>
         </h1>
-    </navigation>
+    </header>
     <body>
         <div id="banner">
             <img src="images/Banner_Steak with Mushroom Risotto.jpg" width="100%"/>
         </div>
-        <content>
+        <div id="content">
             <ul class="container0">
             <section class="menu a">
                 <h2>A</h2>
@@ -128,30 +150,35 @@
                 <br><p>4. Chocolate Mousse</p>
             </section>
             </ul>
-        </content>
+        </div>
         <div id="images">
             <table>
                 <thead>
-                <tr>
-                    <th>Flour</th>
-                    <th>Sugar</th>
-                    <th>Flour</th>
-                    <th>Sugar</th>
-                </tr>
+                    <tr>
+                        <th>Flour</th>
+                        <th>Sugar</th>
+                        <th>Flour</th>
+                        <th>Sugar</th>
+                    </tr>
                 </thead>
-                    <img src="https://s3-ap-northeast-1.amazonaws.com/file.retire.tw/retire/article/article_2018_01_18_14_58_46_36.jpg" width="22.5%"; img class="imgs"/>
-                    <img src="https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2023/08/sugar-shutterstock_615908132s.jpg?size=*:900" width="26.5%"/>
-                    <img src="https://s3-ap-northeast-1.amazonaws.com/file.retire.tw/retire/article/article_2018_01_18_14_58_46_36.jpg" width="22.5%"/>
-                    <img src="https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2023/08/sugar-shutterstock_615908132s.jpg?size=*:900" width="26.5%"/>
+                <tbody>
+                    <tr>
+                        <td><img src="https://s3-ap-northeast-1.amazonaws.com/file.retire.tw/retire/article/article_2018_01_18_14_58_46_36.jpg" width="100%"; height="45%"; img class="imgs"/></td>
+                        <td><img src="https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2023/08/sugar-shutterstock_615908132s.jpg?size=*:900" width="100%"; height="25%";/></td>
+                        <td><img src="https://s3-ap-northeast-1.amazonaws.com/file.retire.tw/retire/article/article_2018_01_18_14_58_46_36.jpg" width="100%"; height="45%"/></td>
+                        <td><img src="https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2023/08/sugar-shutterstock_615908132s.jpg?size=*:900" width="100%"; height="25%"/></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-    </body>
-    <footer>
-        <ul class="container-footer">
+        <div class="footer">
+            <ul class="container-footer">
                 <h2 id="footer"> Footer </h2>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.908524127634!2d120.63433957557623!3d24.10471217508149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693c16a2087bc5%3A0x5dad29846ff91db1!2z5piO6YGT5Lit5a245ZyL6Zqb6YOoIE1ESUQgLSBJQuWtuOagoQ!5e0!3m2!1sen!2stw!4v1764560428306!5m2!1sen!2stw" width="100%" height="450" style="border:0;" allowfullscreen="2" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </footer>
-        </ul>
-    </footer>
+            </ul>
+        </div>
+    </body>
+    
 </html>
 
 display: grid
