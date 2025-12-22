@@ -1,15 +1,24 @@
 
+            * { margin:0; padding:0;}
             header {
+                display:flex;
                 background-color: rgb(105, 131, 148);
-                box-shadow:rgb(105, 131, 148) 20px 4px 12px 35px;
                 padding: 10px;
-                height: 10%;
-                width: 100%;
             }
-            h1 {
-                font-size: 25px;
+             #img {
+                flex:2;
+                max-height: 80px;
+                max-width: 70px;
+                margin-left: 25px;
+                background-color: rgb(189, 189, 189);
+            }
+            #nav {
+                flex: 9;
+                text-decoration: none;
                 text-align: right;
-                margin-right: 25px;
+                font-size: 25px;
+                margin-left: 25px;
+                margin-top: 20px;
                 color: black;
             }
             h2 {
@@ -122,4 +131,10 @@
                 margin-top: 15px;
                 font-size: 15px;
                 color: black;
+            }
+            #subpages-heading {
+                font-size: 40spx;
+                text-align: center;
+                color: black;
+                margin-top: 60px;
             }
