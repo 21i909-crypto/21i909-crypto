@@ -52,6 +52,8 @@
                 border: 2px solid black;
                 margin-top: -10px;
                 margin-bottom: 25px;
+                margin-left: auto;
+                margin-right: auto;
             }
             #img {
                 float: left;
@@ -112,4 +114,43 @@
                 color: black;
                 margin-top: 60px;
                 margin-bottom: 20px;
+            }
+            #section {
+                display: block;
+                font-size: 25spx;
+                text-align: left;
+                margin-left: 80px;
+                margin-right: 0px;
+                margin-bottom: 20px;
+                line-height: 35px;
+                color: black;
+                max-width: 490px;
+            }
+            #breadheading
+            {
+                font-size: 60spx;
+                text-align: center;
+                color: black;
+                padding:25px;
+                margin-top: 0px;
+                margin-bottom: -25px;
+            }
+            #breadtitle{
+                text-align: left;  
+                margin-left: auto;
+                font-size: 30px;
+            }
+            #vertical line {
+                border: 2px solid black; /* Width, style, and color of the line */
+                height: 100px;
+                background-color: black;
+                margin-bottom: 200px
+            }
+            #breadline {
+                width: 95%;
+                border: 3px solid black;
+                margin-top: auto;
+                margin-bottom: auto;
+                margin-left: auto;
+                margin-right: auto;
             }
